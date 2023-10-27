@@ -1,0 +1,52 @@
+/* Your existing CSS styles here */
+
+/* Apply a background color and padding to the entire section */
+section.calculator {
+    background-color: #1B6B93;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Adjust input and select styles */
+section.calculator select, section.calculator input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #A2FF86;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #1B6B93;
+    color: #fff;
+    transition: border-bottom 0.3s ease;
+}
+
+section.calculator select:focus, section.calculator input:focus {
+    border-bottom: 2px solid #A2FF86;
+}
+
+/* Apply styles to the calculate button */
+#calculate-button {
+    background-color: #A2FF86;
+    color: #1B6B93;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calculate-button:hover {
+    background-color: #1B6B93;
+    color: #A2FF86;
+}
+
+/* Adjust result output styles */
+#result-output {
+    background-color: #A2FF86;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #1B6B93;
+}

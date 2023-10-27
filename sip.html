@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" type="text/css" href="sipStyles.css">
+</head>
+<body>
+    <header>
+        <h1>Giggles and Growth SIP Calculator</h1>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2>SIP Investment Details</h2>
+            <form id="sip-form">
+                <label for="principal">Principal Amount (₹):</label>
+                <div class="slider-container">
+                    <input type="range" id="principal" required min="500" max="1000000">
+                    <output id="principal-value">500</output>
+                </div>
+
+                <label for="rate">Annual Interest Rate (%):</label>
+                <div class="slider-container">
+                    <input type="range" id="rate" step="0.01" required min="6" max="18">
+                    <output id="rate-value">6.00</output>
+                </div>
+
+                <label for="time">Investment Period (Years):</label>
+                <div class="slider-container">
+                    <input type="range" id="time" required min="1" max="20">
+                    <output id="time-value">1</output>
+                </div>
+
+                <button type="button" id="calculate-button">Calculate</button>
+            </form>
+        </section>
+
+        <section class="result">
+            <h2>Calculation Result</h2>
+            <div id="result-output">
+                <!-- Result will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Giggles and Growth</p>
+    </footer>
+    <script src="sip.js"></script>
+</body>
+</html>

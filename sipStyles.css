@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1B6B93;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section.calculator {
+    background-color: #4FC0D0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #fff;
+}
+
+form label {
+    display: block;
+    justify-content: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Add styles for slider container */
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the slider appearance */
+.slider-container input[type="range"] {
+    width: 80%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #A2FF86;
+    border-radius: 5px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #1B6B93;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-container output {
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    color: #1B6B93;
+    font-size: 16px;
+}
+
+button#calculate-button {
+    background-color: #1B6B93;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#calculate-button:hover {
+    background-color: #007BFF;
+}
+
+section.result {
+    margin-top: 20px;
+}
+
+#result-output {
+    background-color: #A2FF86;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}

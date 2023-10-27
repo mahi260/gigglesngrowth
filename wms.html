@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Wealth Management</title>
+    <link rel="stylesheet" type="text/css" href="wmsStyles.css">
+</head>
+<body>
+    <header>
+        <h1>Wealth Management System</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="calculator">
+                <h2>Wealth Management Details</h2>
+                <form id="wealth-form">
+                    <div class="input-group">
+                        <label for="goals">Select Your Financial Goals:</label>
+                        <select id="goals" size="1" required >
+                            <option value="education">Education</option>
+                            <option value="family">Family</option>
+                            <option value="business">Business</option>
+                            <option value="house">House</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="goal-amount">Goal Amount (₹):</label>
+                        <input type="number" id="goal-amount" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="earnings">Current Annual Earnings (₹):</label>
+                        <input type="number" id="earnings" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="spending">Current Annual Spending (₹):</label>
+                        <input type="number" id="spending" required>
+                    </div>
+
+                    <h3>Breakdown of Annual Spending by Domain</h3>
+                    <div class="input-group">
+                        <label for="transport">Transport (₹):</label>
+                        <input type="number" id="transport" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="entertainment">Entertainment (₹):</label>
+                        <input type="number" id="entertainment" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="groceries">Groceries (₹):</label>
+                        <input type="number" id="groceries" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="timeline">Timeline to Fulfill Goal (Years):</label>
+                        <input type="number" id="timeline" required>
+                    </div>
+
+                    <button type="button" id="calculate-button">Calculate</button>
+                </form>
+            </section>
+
+            <section class="result">
+                <h2>Calculation Result</h2>
+                <div id="result-output">
+                    <!-- Result will be displayed here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Giggles and Growth</p>
+    </footer>
+    <script src="wms.js"></script>
+</body>
+</html>

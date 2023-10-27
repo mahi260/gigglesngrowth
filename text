@@ -1,0 +1,40 @@
+// Recommendations for High Risk, Medium Budget, Oil Sector
+if (riskLevel === "High Risk" && budget >= 10000 && budget < 50000 && sector === "Oil Sector") {
+  addRecommendation("Consider investing in smaller independent oil companies like EOG Resources, Inc. (EOG) for high-risk, medium-budget investors.", recommendationList);
+  addRecommendation("Apache Corporation (APA) is another option with potential for growth in the high-risk, medium-budget category.", recommendationList);
+}
+
+// Recommendations for High Risk, Medium Budget, Banking Sector
+if (riskLevel === "High Risk" && budget >= 10000 && budget < 50000 && sector === "Banking Sector") {
+  addRecommendation("For high-risk, medium-budget investors in the banking sector, consider investing in Barclays PLC (BCS) with its global presence.", recommendationList);
+  addRecommendation("Citizens Financial Group, Inc. (CFG) offers potential growth opportunities in this category.", recommendationList);
+}
+
+// Recommendations for High Risk, Medium Budget, IT Sector
+if (riskLevel === "High Risk" && budget >= 10000 && budget < 50000 && sector === "IT Sector") {
+  addRecommendation("Palantir Technologies Inc. (PLTR) is a high-risk, medium-budget choice with potential for growth in the IT sector.", recommendationList);
+  addRecommendation("Investing in CrowdStrike Holdings, Inc. (CRWD) offers exposure to the cybersecurity market with high-risk potential.", recommendationList);
+}
+
+// Recommendations for High Risk, High Budget, Oil Sector
+if (riskLevel === "High Risk" && budget >= 50000 && sector === "Oil Sector") {
+  addRecommendation("For high-budget investors with a high-risk appetite in the oil sector, consider Concho Resources Inc. (CXO) with potential for significant returns.", recommendationList);
+  addRecommendation("Diamondback Energy, Inc. (FANG) is another high-risk, high-budget option with growth potential in oil exploration.", recommendationList);
+}
+
+// Recommendations for High Risk, High Budget, Banking Sector
+if (riskLevel === "High Risk" && budget >= 50000 && sector === "Banking Sector") {
+  addRecommendation("In the banking sector, high-budget investors with a high-risk tolerance can explore investments in Goldman Sachs Group, Inc. (GS) known for its investment banking services.", recommendationList);
+  addRecommendation("Santander Consumer USA Holdings Inc. (SC) is another high-risk, high-budget choice with growth potential in the banking industry.", recommendationList);
+}
+
+// Recommendations for High Risk, High Budget, IT Sector
+if (riskLevel === "High Risk" && budget >= 50000 && sector === "IT Sector") {
+  addRecommendation("For high-budget investors seeking high-risk opportunities in the IT sector, Cloudflare, Inc. (NET) offers growth potential in the cloud security market.", recommendationList);
+  addRecommendation("NVIDIA Corporation (NVDA) is another high-risk, high-budget choice, known for its innovations in graphics and artificial intelligence.", recommendationList);
+}
+
+// Default recommendation if criteria don't match any combination
+if (recommendationList.childElementCount === 0) {
+  addRecommendation("No specific recommendation. Please consult a financial advisor.", recommendationList);
+}
